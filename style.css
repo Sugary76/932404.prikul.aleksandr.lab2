@@ -1,10 +1,18 @@
+:root{
+    --main-color: #7e22cee8;
+    --accent-color: #3fc971ea;
+    --bg-color: #241a33;
+    --card-bg: #2a1e3b;
+    --text-color: #d4cadf;
+}
+
 * {
     box-sizing: border-box;
 }
 
 body {
-    background-color: #1b1327;
-    color: #ccc1d8;
+    background-color: var(--bg-color);
+    color: var(--text-color);
     font-family: Tahoma, Arial, sans-serif;
     max-width: 800px;
     margin: 0 auto;
@@ -13,18 +21,18 @@ body {
 
 header {
     text-align: center;
-    border-bottom: 2px solid #a75bee;
+    border-bottom: 2px solid var(--main-color);
     padding-bottom: 20px;
     margin-bottom: 20px;
 }
 
 header h1 {
-    color: #bd84f5;
+    color: var(--main-color);
     font-size: 2.2rem;
 }
 
 header p {
-    color: #4ade80; 
+    color: var(--accent-color); 
     margin-top: 10px;
 }
 
@@ -35,13 +43,13 @@ main img {
     object-fit: cover;
     border-radius: 8px;
     margin: 0 auto 20px auto;
-    border: 3px solid #3bac65;
+    border: 3px solid var(--accent-color);
     box-shadow: 0 0 15px rgba(74, 222, 128, 0.4);
 }
 
 section, aside {
-    background-color: #251a35;
-    border: 1px solid #7e22ce;
+    background-color: var(--card-bg);
+    border: 1px solid var(--main-color);
     border-radius: 10px;
     padding: 20px;
     margin-bottom: 20px;
@@ -49,7 +57,7 @@ section, aside {
 
 h2 {
     color: #c28ef7;
-    border-bottom: 1px dashed #7e22ce;
+    border-bottom: 1px dashed var(--main-color);
     padding-bottom: 8px;
     margin-top: 0;
 }
@@ -65,19 +73,19 @@ label {
     font-weight: bold;
 }
 
-input, textarea {
+input {
     width: 100%;
     padding: 10px;
     margin-top: 5px;
     margin-bottom: 15px;
-    background-color: #0d0914;
-    border: 1px solid #7e22ce;
+    background-color: var(--bg-color);
+    border: 1px solid var(--main-color);
     color: #fff;
     border-radius: 4px;
 }
 
 button {
-    background-color: #7e22ce;
+    background-color: var(--main-color);
     color: white;
     border: none;
     padding: 10px 20px;
@@ -87,6 +95,6 @@ button {
 }
 
 button:hover {
-    background-color: #4ade80; 
-    color: #120d1a;
+    background-color: var(--accent-color); 
+    color: var(--bg-color);
 }
