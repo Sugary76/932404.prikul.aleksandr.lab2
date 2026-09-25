@@ -85,10 +85,6 @@ input, textarea {
     font-family: inherit;
 }
 
-input {
-    padding: 10px;
-}
-
 button {
     background-color: var(--main-color);
     color: white;
@@ -139,4 +135,23 @@ ol {
 
 .project-card:active {
     transform: translateY(1px);
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: var(--accent-color);
+    box-shadow: 0 0 8px #3fc97283;
+}
+
+a {
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+a:visited {
+    color: #c28ef7;
+}
+
+a:hover{
+    text-decoration: underline;
 }
