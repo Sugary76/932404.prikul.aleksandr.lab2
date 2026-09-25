@@ -128,13 +128,13 @@ ol {
 }
 
 .project-card:hover {
-    transform: translateY(-4px);
+    transform: translateY(-5px);
     border-color: var(--accent-color);
     box-shadow: 0 4px 12px rgba(63, 201, 113, 0.2);
 }
 
 .project-card:active {
-    transform: translateY(1px);
+    transform: translateY(2px);
 }
 
 input:focus, textarea:focus {
